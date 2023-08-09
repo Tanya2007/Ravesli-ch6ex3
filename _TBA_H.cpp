@@ -1,5 +1,5 @@
 #include "_TBA_H.h"
-
+#if defined (_WIN32) && UTF8_encoded_file
 std::string UTF8_to_CP1251(const std::string &utf8)
 {
 	if(!utf8.empty())
@@ -16,3 +16,4 @@ std::string UTF8_to_CP1251(const std::string &utf8)
 	}
 	return std::string();
 }
+#endif
